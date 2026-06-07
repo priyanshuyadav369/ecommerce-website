@@ -15,7 +15,7 @@ export function Products() {
         {productList.map(product => (
           <div key={product.id} style={{border:"2px solid #203324", borderRadius:"10px", padding:"15px", textAlign:"center", boxShadow:"2px 2px 8px rgba(0, 0, 0, 0.1)"}}>
             <img src={product.img} alt={product.name} style={{width:"100%", borderRadius:"8px" , backgroundColor:"rgb(0, 47, 44)"}}/>
-            <h3>{product.name}</h3>
+            <h3 style={{color:"rgb(0,47,44"}}>{product.name}</h3>
             <p style={{color:"#555"}}>{product.description}</p>
             <p style={{fontWeight:"bold", color:"#e44"}}>{product.price}</p>
             <button style={{padding:"8px 20px", backgroundColor:"rgb(0, 47, 44)", color:"white", border:"none", borderRadius:"5px", cursor:"pointer"}}>
